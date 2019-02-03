@@ -36,6 +36,8 @@ $(document).ready(
                 {
                     return false;
                 }
+
+                $("form#contactForm").submit();
             });
         }
 

@@ -11,7 +11,7 @@
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/lightbox.min.css" rel="stylesheet">
 <link href="css/bootstrap-glyphicons.css" rel="stylesheet">
-<link href="css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
 <!--Custom-->
@@ -83,20 +83,20 @@ to the community we serve.</p>
         <p>If you have any questions, comments, feedback, or etc, follow us on these social media sites or call 612-483-1917.
         </p>
 
-        <a class="facebook" href="http://facebook.com">Facebook <i class="fa fa-facebook"></i></a>
+        <a class="facebook" href="http://facebook.com">Facebook <i class="fab fa-facebook"></i></a>
 
-        <a class="twitter" href="http://twitter.com">Twitter <i class="fa fa-twitter"></i></a>
+        <a class="twitter" href="http://twitter.com">Twitter <i class="fab fa-twitter"></i></a>
 
-        <a class="instagram" href="http://instagram.com">Instagram <i class="fa fa-instagram"></i></a>
+        <a class="instagram" href="http://instagram.com">Instagram <i class="fab fa-instagram"></i></a>
 
-        <a class="linkedin" href="http://linkedin.com">LinkedIn <i class="fa fa-linkedin"></i></a>
+        <a class="linkedin" href="http://linkedin.com">LinkedIn <i class="fab fa-linkedin"></i></a>
             
         </div>
         <div class="col-md-6">
-        <form action="//formspree.io/akeeawhite@gmail.com" method="post">
+        <form action="//formspree.io/akeeawhite@gmail.com" method="POST" name="contactForm" onsubmit="return validateText()">
             <div class="form-group">
             <label for="contactName">NAME*</label>
-            <input type="text"  id="contactName" name="fullname">
+            <input type="text" id="contactName" name="fullname">
             </div>
             <br>
             <div class="form-group">
@@ -111,11 +111,11 @@ to the community we serve.</p>
             <br>
             <div class="form-group">
             <label for="contactMessage">MESSAGE*</label>
-            <input type="text" class="message" name="message">
+            <input type="text" id="contactMessage" class="message" name="message">
             </div>
             <p>Star (*) denotes required fields</p>
             <br>
-            <input type="button" class="send" value="SEND MESSAGE">
+            <input type="button" class="send" id="contactSend" value="SEND MESSAGE">
         </form> 
         </div>
 </div>
@@ -136,9 +136,9 @@ to the community we serve.</p>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
-<script src="js/lightbox.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/lightbox.js"></script>
 <!--custom javascript-->
 <script src="js/validation.js"></script>
 </body>
